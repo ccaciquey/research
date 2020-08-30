@@ -16,7 +16,7 @@ spec:
       - name: nginx-web4
         image: nginx
         ports:
-          - containerPort: 82
+          - containerPort: 80
         volumeMounts:
           - name: html-ngix-volume
             mountPath: /usr/share/nginx/html
