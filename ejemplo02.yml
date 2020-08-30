@@ -18,14 +18,9 @@ spec:
         ports:
           - containerPort: 82
         volumeMounts:
-          - name: config-ngix-volume
-            mountPath: /etc/nginx/conf.d
           - name: html-ngix-volume
             mountPath: /usr/share/nginx/html
       volumes:
-        - name: config-ngix-volume
-          hostPath:
-            path: /home/ccaciquey/config-nginx
         - name: html-ngix-volume
           hostPath:
             path: /home/ccaciquey/html-nginx
